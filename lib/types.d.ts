@@ -8,7 +8,7 @@ export type ServerArgs = {
   logger: FastifyServerOptions['logger'] | undefined;
 };
 
-export type DefineFastifyRoutes = (fastify: FastifyInstance) => void;
+export type DefineFastifyRoutes = (fastify: FastifyInstance) => Promise<void>;
 
 export type IntegrationOptions = {
   /**
